@@ -3,9 +3,9 @@ const stars = document.querySelector('.ratings').children;
 
 //Recorre cada elemento de stars y añade evento
 for (let i = 0; i < stars.length; i++) {
-    stars[i].addEventListener('mouseover', function(){
+    /*stars[i].addEventListener('mouseover', function(){
 		set_starts(i);
-    });
+    });*/
     stars[i].addEventListener('click', function(){
         console.log(stars[i]);
 		set_starts(i);
@@ -36,6 +36,5 @@ function clean_all_stars(){
 	for (let j = 0; j < stars.length; j++) {
 		stars[j].classList.remove("fa-star");
 		stars[j].classList.add("fa-star-o");
-
 	}
 }

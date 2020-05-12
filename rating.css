@@ -7,3 +7,8 @@
     font-size: 40px;
     color: blue;
 }
+
+.ratings span:hover::before{
+    font-size: 40px;
+    content:  red;
+}
